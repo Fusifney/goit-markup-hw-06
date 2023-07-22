@@ -30,7 +30,7 @@
           </ul>
         </nav>
         <address class="header-address">
-          <ul class="header-list list">
+          <ul class="address-list list">
             <li>
               <a class="header-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -39,6 +39,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu-toggle js-open-menu btn" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use class="burger-icon" href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- /** |============================ | Main content |============================ */ -->
@@ -61,7 +66,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features-header list-header">Strategy</h3>
+              <h3 class="features-header">Strategy</h3>
               <p class="features-content">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
             </li>
             <li class="features-item card-set-item">
@@ -70,7 +75,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features-header list-header">Punctuality</h3>
+              <h3 class="features-header">Punctuality</h3>
               <p class="features-content">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
             </li>
             <li class="features-item card-set-item">
@@ -79,7 +84,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features-header list-header">Diligence</h3>
+              <h3 class="features-header">Diligence</h3>
               <p class="features-content">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
             </li>
             <li class="features-item card-set-item">
@@ -88,7 +93,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features-header list-header">Technologies</h3>
+              <h3 class="features-header">Technologies</h3>
               <p class="features-content">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
             </li>
           </ul>
@@ -115,8 +120,8 @@
       <section class="team-section">
         <div class="container">
           <h2 class="section-title team-title">Our Team</h2>
-          <ul class="card-set list">
-            <li class="card-set-item team-list list">
+          <ul class="card-set team-list">
+            <li class="card-set-item team-list-item">
               <img src="./images/main-page/team1.jpg" alt="Mark Guerrero" width="264" height="260" />
               <div class="team-card">
                 <h3 class="list-header team-item">Mark Guerrero</h3>
@@ -153,7 +158,7 @@
                 </ul>
               </div>
             </li>
-            <li class="card-set-item team-list list">
+            <li class="card-set-item team-list-item">
               <img src="./images/main-page/team2.jpg" alt="Tom Ford" width="264" height="260" />
               <div class="team-card">
                 <h3 class="list-header team-item">Tom Ford</h3>
@@ -190,7 +195,7 @@
                 </ul>
               </div>
             </li>
-            <li class="card-set-item team-list list">
+            <li class="card-set-item team-list-item">
               <img src="./images/main-page/team3.jpg" alt="Camila Garcia" width="264" height="260" />
               <div class="team-card">
                 <h3 class="list-header team-item">Camila Garcia</h3>
@@ -227,7 +232,7 @@
                 </ul>
               </div>
             </li>
-            <li class="card-set-item team-list list">
+            <li class="card-set-item team-list-item">
               <img src="./images/main-page/team4.jpg" alt="Daniel Wilson" width="264" height="260" />
               <div class="team-card">
                 <h3 class="list-header team-item">Daniel Wilson</h3>
@@ -320,16 +325,16 @@
     </main>
     <!-- /** |============================ | Footer |============================ */ -->
     <footer class="footer-section">
-      <div class="container footer-container">
-        <div class="footer-left-box">
-          <a class="web-logo bot-web-logo link" href="./index.html">Web<span class="footer-studio-logo">Studio</span></a>
+      <div class="container footer-container card-set">
+        <div class="footer-left-box card-set-item">
+          <a class="footer-web-logo link" href="./index.html">Web<span class="footer-studio-logo">Studio</span></a>
           <p class="footer-left-text">
             Increase the flow of customers and<br />
             sales for your business with digital<br />
             marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-right-box">
+        <div class="footer-right-box card-set-item">
           <p class="footer-right-text">Social media</p>
           <ul class="footer-contacts-list card-set list">
             <li class="footer-contacts-item card-set-item">
@@ -362,7 +367,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form-section">
+        <div class="footer-form-section card-set-item">
           <p class="footer-form-title">Subscribe</p>
           <form class="footer-form">
             <label class="footer-label">
@@ -386,9 +391,7 @@
             <use href="./images/icons.svg#icon-x-close"></use>
           </svg>
         </button>
-
         <p class="form-title">Leave your contacts and we will call you back</p>
-
         <form class="modal-form" name="issue-report-form" autocomplete="off">
           <div class="form-unit">
             <label class="form-field" for="user-name">Name</label>
@@ -399,7 +402,6 @@
               </svg>
             </div>
           </div>
-
           <div class="form-unit">
             <label class="form-field" for="user-phone">Phone</label>
             <div class="form-input-box">
@@ -409,7 +411,6 @@
               </svg>
             </div>
           </div>
-
           <div class="form-unit">
             <label class="form-field" for="user-mail">Email</label>
             <div class="form-input-box">
@@ -419,15 +420,12 @@
               </svg>
             </div>
           </div>
-
           <div class="comm-form-unit">
             <label class="form-field" for="user-comment">Comment</label>
             <textarea class="comm-form-input" name="user-comment" id="user-comment" placeholder="Text input" rows="5"></textarea>
           </div>
-
           <div class="agreement-sect">
             <input class="check-box visually-hidden" type="checkbox" name="user-privacy" value="true" id="user-privacy" />
-
             <label class="policy" for="user-privacy">
               <span class="custom-check-box">
                 <svg class="checkbox-icon" width="10" height="8">
@@ -436,11 +434,77 @@
               >I accept the terms and conditions of the <a class="policy-link" href="#">Privacy Policy</a>
             </label>
           </div>
-
           <button class="form-button" type="submit">Send</button>
         </form>
       </div>
     </div>
+
+    <!-- /** |============================ | Mobile menu |============================ */ -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-x js-close-menu">
+        <svg width="8" height="8">
+          <use class="menu-toggle-x-icon" href="./images/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link active" href="./index.html" class="m-m-link">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="./portfolio.html" class="m-m-link">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="" class="m-m-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="company-conts-box">
+        <li class="company-tel">
+          <a class="tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="company-mail">
+          <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mob-menu-soc-box">
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-instagram">
+            <svg class="ftr-soc-conts-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-twitter">
+            <svg class="ftr-soc-conts-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twit"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-facebook">
+            <svg class="ftr-soc-conts-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-face"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-linkedin">
+            <svg class="ftr-soc-conts-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-in"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 
     <script src="./js/modal.js"></script>
   </body>
