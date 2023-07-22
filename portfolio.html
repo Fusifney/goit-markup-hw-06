@@ -28,7 +28,7 @@
           </ul>
         </nav>
         <address class="header-address">
-          <ul class="header-list list">
+          <ul class="address-list list">
             <li>
               <a class="header-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -37,6 +37,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu-toggle js-open-menu btn" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use class="burger-icon" href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -254,5 +259,72 @@
         </div>
       </div>
     </footer>
+
+    <!-- /** |============================ | Mobile menu |============================ */ -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-x js-close-menu">
+        <svg width="8" height="8">
+          <use class="menu-toggle-x-icon" href="./images/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="./index.html" class="m-m-link">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link active" href="./portfolio.html" class="m-m-link">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="" class="m-m-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="company-conts-box">
+        <li class="company-tel">
+          <a class="tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="company-mail">
+          <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mob-menu-soc-box">
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-instagram">
+            <svg class="ftr-soc-conts-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-twitter">
+            <svg class="ftr-soc-conts-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twit"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-facebook">
+            <svg class="ftr-soc-conts-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-face"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-linkedin">
+            <svg class="ftr-soc-conts-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-in"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
