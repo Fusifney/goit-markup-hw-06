@@ -47,8 +47,8 @@ body {
   padding-left: 16px;
   padding-right: 16px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .card-set {
@@ -243,7 +243,7 @@ button {
   }
 
   .active-link {
-    color: #404bbf;
+    color: var(--header-ahf-cl);
   }
 
   .active-link::after {
@@ -309,7 +309,7 @@ button {
   margin: 0 auto;
 }
 
-/* Retina background */
+/* Retina screen */
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -1168,7 +1168,7 @@ button {
   border-radius: 4px;
   width: 360px;
   height: 40px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--anim);
   background-color: transparent;
 }
 
@@ -1317,7 +1317,7 @@ button {
   border: none;
   border-radius: 50%;
   outline: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim);
 }
 
 @media (min-width: 768px) {
@@ -1332,7 +1332,7 @@ button {
 }
 
 .menu-toggle-icon {
-  stroke: #2E2F42;
+  stroke: var(--secondary-cl);
 }
 
 /*--mobile menu overlay--*/
@@ -1349,7 +1349,7 @@ button {
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
-  background-color: #FFF;
+  background-color: var(--primary-bg-cl);
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -1377,7 +1377,7 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background: #E7E9FC;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim), border var(--anim);
 }
 
 .menu-toggle-x:hover,
@@ -1387,11 +1387,11 @@ button {
 }
 
 .menu-toggle-x:hover .menu-toggle-x-icon {
-  fill: #ffffff;
+  fill: var(--primary-bg-cl);
 }
 
 .menu-toggle-x:focus .menu-toggle-x-icon {
-  fill: #ffffff;
+  fill: var(--primary-bg-cl);
 }
 
 /*--menu overlay--*/
@@ -1416,7 +1416,7 @@ button {
 
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
-  color: #404bbf;
+  color: var(--header-ahf-cl);
 }
 
 .company-conts-box {
@@ -1451,12 +1451,12 @@ button {
 
 .tel:hover,
 .tel:focus {
-  color: #404bbf;
+  color: var(--header-ahf-cl);
 }
 
 .mail:hover,
 .mail:focus {
-  color: #404bbf;
+  color: var(--header-ahf-cl);
 }
 
 .mob-menu-soc-box {
@@ -1468,54 +1468,4 @@ button {
   flex-wrap: wrap;
   /* gap: calc((100% - 40px * 4) / 3); */
   gap: 17%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/**
-  |============================
-  | Additional bot requirements
-  |============================
-*/
-
-/* common styles */
-.section-title {
-  letter-spacing: 0.02em;
-}
-
-.list-header {
-  letter-spacing: 0.02em;
-}
-
-/* header styles */
-.header-address {
-  font-style: normal;
-}
-
-/* main styles */
-.hero-title {
-  letter-spacing: 0.02em;
-}
-
-.hero-btn {
-  line-height: 1.50;
-}
-
-/* portfolio styles */
-.portfolio-btn {
-  line-height: 1.50;
-}
-
-.portfolio-list {
-  column-gap: 24px;
-  row-gap: 48px;
 }
